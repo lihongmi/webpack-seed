@@ -10,14 +10,13 @@ const readdir = dir => {
     file = path.resolve(dir, file)
 
     const stats = fs.statSync(file)
-    if (stats.isFile()) {
-      // results.push(file)
-    } else if (stats.isDirectory()) {
+    if (stats.isDirectory()) {
       results = results.concat(readdir(file))
     }
   })
   return results
 }
+
 const getDirectoryName = () => {
   const filePaths = readdir(path.resolve(__dirname, '../../', 'src/views/'))
   return filePaths.map(item => {
