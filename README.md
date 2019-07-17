@@ -1,3 +1,19 @@
+工程化
+  grunt、
+  gulp、
+  bower、
+  yeoman、
+  rollup、
+  fis3、
+  webpack、
+
+打包
+
+eslint
+
+ejs
+
+
 
 <p align="center">
   <a href="https://github.com/BiYuqi/webpack-seed">
@@ -17,7 +33,7 @@
   <a href="https://github.com/BiYuqi/webpack-seed/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
   </a>
-  
+
 </p>
 
 ## Introduction
@@ -211,7 +227,7 @@ npm run new
 run:
 ```
 npm rebuild node-sass --force
-``` 
+```
 * IE
 - Support IE9+ (not support flex, please note)
 - Axios not support IE9, you can replace it with other ajax libraby.
