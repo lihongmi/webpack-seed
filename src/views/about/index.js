@@ -5,31 +5,13 @@
  import './about.scss'
 //import '@/views/about/about.scss'
 
-// 测试用的工具函数
-import __ from 'utils/dom'
-import { movieList } from '@/api/movie'
+$('#btn2').longTap(()=>{
+  __('.box2').addClass('myred');
+})
 
-class About {
-  init() {
-    //实现点击
-    this.testToolFun()
-    //tab 切换
-    this.testFetchData()
-
-  }
-
-  testToolFun() {
-      document.getElementById('btn1').onclick=function(){
-        alert('ddddd');
-      }
-  }
-
-  testFetchData() {
-    console.log('功能2')
-  }
-
-
-
+document.getElementById('btn1').onclick=function(){
+  alert('ddddd');
 }
+console.log('功能2')
 
-new About().init()
+

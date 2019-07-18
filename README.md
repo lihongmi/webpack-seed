@@ -14,6 +14,13 @@ eslint
 ejs
 
 
+写js
+jquery
+zepto
+
+
+
+
 
 <p align="center">
   <a href="https://github.com/BiYuqi/webpack-seed">

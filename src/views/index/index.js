@@ -21,6 +21,11 @@ class HomePage {
     // 测试ejs模板使用
     const data = [
       {
+        link: 'html/about.html',
+        key: '我们',
+        icon: 'iconfont icon-frown'
+      },
+      {
         link: 'html/test-page.html',
         key: '测试页面',
         icon: 'iconfont icon-rocket'
@@ -41,6 +46,7 @@ class HomePage {
         icon: 'iconfont icon-edit'
       }
     ]
+
     __('.wbs-home_dynamic-inject').html(
       EjsTest({
         index: data

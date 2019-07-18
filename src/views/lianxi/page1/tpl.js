@@ -1,5 +1,5 @@
 import content from './page1.ejs'
-import layout from 'layout/layout/layout.js'
+import layout from 'layout/layoutcommon/layout.js'
 const pageTitle = 'page1'
 
 
