@@ -8,16 +8,28 @@
   webpack、
 
 打包
-
 eslint
-
 ejs
-
 
 写js
 jquery
 zepto
 
+ajax
+axios
+
+```
+$.ajax({
+    url:'',
+    type:'',
+    data:{},
+    success(){
+
+    }
+  });
+
+$.axios();
+```
 
 
 
