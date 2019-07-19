@@ -6,7 +6,7 @@ import axios from 'axios'
 
 const server = axios.create({
   // 测试用的接口，比较慢，豆瓣电影的数据
-  baseURL: 'https://heroku-douban-api.herokuapp.com',
+  baseURL: 'http://api.6fu.co/api',
 
   // 区分环境(只有2个)
   // baseURL: process.env.NODE_ENV === 'development' ? '开发环境地址' : '生产环境地址',
@@ -31,6 +31,7 @@ const server = axios.create({
 server.interceptors.request.use(
   config => {
     config.headers['Content-Type'] = 'application/json; charset=UTF-8'
+    //config.headers['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
     // config.headers['Authorization'] = 'Your server return token'
     return config
   },
@@ -44,10 +45,15 @@ server.interceptors.response.use(
     /**
      * 这里可以做接口相关的拦截设置
      */
-    // const res = response.data
-    // if (res.code === 401) {
-    //   console.log('账户登录失效')
-    // }
+    const res = response.data
+    if (res.code === 401) {
+      console.log('未授权')
+    }else if(res.code==403){
+      console.log('拒绝')
+    }
+    else if(res.code==404){
+      console.log('未找到')
+    }
     return response
   },
   error => {

@@ -21,11 +21,6 @@ class HomePage {
     // 测试ejs模板使用
     const data = [
       {
-        link: 'html/about.html',
-        key: '我们',
-        icon: 'iconfont icon-frown'
-      },
-      {
         link: 'html/test-page.html',
         key: '测试页面',
         icon: 'iconfont icon-rocket'
@@ -44,6 +39,11 @@ class HomePage {
         link: 'html/news-page.html',
         key: '多目录测试',
         icon: 'iconfont icon-edit'
+      },
+      {
+        link: 'html/about.html',
+        key: '我们',
+        icon: 'iconfont icon-frown'
       }
     ]
 
